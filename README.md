@@ -1,1 +1,1 @@
-# BomberMan-js-only-
+# BomberMan js only
