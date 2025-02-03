@@ -1,0 +1,51 @@
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(15, 40px);
+    gap: 1px;
+    background-color: #333;
+    padding: 5px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    position: relative;
+}
+
+.wall {
+    background-color: #666;
+}
+
+.breakable {
+    background-color: #8b4513;
+}
+
+.player {
+    width: 30px;
+    height: 30px;
+    background-color: #00ff00;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: all 0.1s;
+}
+
+.bomb {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+}
+
+.explosion {
+    background-color: #ffa500 !important;
+}
+
+#score {
+    font-size: 24px;
+    margin: 10px;
+}
